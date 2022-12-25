@@ -1,18 +1,16 @@
 import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
-import { Row, Col, Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Form, useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { API_URL } from "../../url";
 
 const FormDeliverOrder = () => {
-	const { id } = useParams();
 	const [orders, setOrders] = useState([]);
-	const [sudahDikirim, setSudahDikirim] = useState([]);
-	const [dikirimTanggal, setDikirimTanggal] = useState([]);
-	const navigate = useNavigate();
+	useState([]);
+
 	useEffect(() => {
 		getOrders();
 	}, []);

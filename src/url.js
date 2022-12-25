@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:3100";
+export const API_URL = "https://jura-server-production.up.railway.app";
