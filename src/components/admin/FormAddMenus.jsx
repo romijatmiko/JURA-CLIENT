@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../../url";
 
 const FormAddMenus = () => {
 	const [nama_menu, setNama_menu] = useState("");
